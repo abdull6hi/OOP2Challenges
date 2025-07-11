@@ -1,17 +1,14 @@
 public class main {
     public static void main(String[] args) {
-        // Updated with new constructor that includes email
-        Admin admin = new Admin(1, "HAPPY", "happy@example.com");
-        User user = new User(2, "Jesse", "jesse@example.com");
+        Admin admin = new Admin(1, "UserOne", "userone@example.com");
+        User user = new User(2, "UserTwo", "usertwo@example.com");
 
-        // DataSource implementations
         DataSource view = new View();
         DataSource update = new Update();
         DataSource delete = new Delete();
 
-        // Performing operations
-        admin.performOperation(view);     // View operation executed
-        user.performOperation(update);    // Update operation executed
-        admin.performOperation(delete);   // Delete operation executed
+        admin.performOperation(view);
+        user.performOperation(update);
+        admin.performOperation(delete);
     }
 }
