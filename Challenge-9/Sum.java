@@ -8,6 +8,7 @@ public class Sum {
         }
     }
 
+
     public static void main (String[]args){
         int result=sum(5);
         System.out.println("Sum"+result);
